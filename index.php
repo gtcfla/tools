@@ -250,6 +250,7 @@
 			<input type="text" id="_encrypted" value="<?php echo $_encrypted;?>" style="width: 920px;" />
 			<?php endif;?>
 			<form method="post" action="?tab=2">
+			<legend>RSA公钥解密</legend>
 				<textarea name="_key1" rows="5" style="width: 920px;" placeholder="请输入公钥"><?php echo empty($_POST['_key1']) ? '' : $_POST['_key1'];?></textarea>
 				<textarea name="_str1" rows="9" style="width: 920px;" placeholder="请输入密文"><?php echo empty($_POST['_str1']) ? '' : $_POST['_str1'];?></textarea>
 				<button class="button" type="submit">解密</button>
